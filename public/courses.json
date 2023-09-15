@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "image_url": "https://i.ibb.co/vj9Lm8r/Rectangle-2-2.png",
+        "title": "Introduction to C Programming",
+        "description": "Master the fundamentals of C programming language and build a solid foundation in computer programming.",
+        "price": 15000,
+        "credit_hour": 1
+    },
+    {
+        "id": 2,
+        "image_url": "https://i.ibb.co/TqLgR2Z/Rectangle-2-4.png",
+        "title": "Introduction to C++ for DSA",
+        "description": "Learn C++ programming, an industry-standard language, and unleash the power of object-oriented programming.",
+        "price": 10000,
+        "credit_hour": 10
+    },
+    {
+        "id": 3,
+        "image_url": "https://i.ibb.co/m0ZWgwq/Rectangle-3.png",
+        "title": "Basic Data Structures",
+        "description": "Explore the world of data structures and gain insights into efficient data organization and manipulation.",
+        "price": 35000,
+        "credit_hour": 5
+    },
+    {
+        "id": 4,
+        "image_url": "https://i.ibb.co/HNqs9Rb/Rectangle-2-3.png",
+        "title": "Introduction to Algorithms",
+        "description": "Dive deep into the world of algorithms and problem-solving techniques, essential for any programmer or computer scientist.",
+        "price": 25000,
+        "credit_hour": 2
+    },
+    {
+        "id": 5,
+        "image_url": "https://i.ibb.co/NtDSXzz/Rectangle-2.png",
+        "title": "Introduction to OOP Python",
+        "description": "Discover the power of object-oriented programming in Python and build scalable and maintainable applications.",
+        "price": 19000,
+        "credit_hour": 5
+    },
+    {
+        "id": 6,
+        "image_url": "https://i.ibb.co/pbqSBrX/Rectangle-2-6.png",
+        "title": "Problem-Solving Part",
+        "description": "Develop problem-solving skills with this course, tackling real-world challenges using algorithmic thinking.",
+        "price": 23000,
+        "credit_hour": 2
+    },
+    {
+        "id": 7,
+        "image_url": "https://i.ibb.co/2SdPT4X/Rectangle-2-1.png",
+        "title": "Database (MySQL)",
+        "description": "Master the art of database management, from designing schemas to optimizing queries, for efficient data handling.",
+        "price": 19000,
+        "credit_hour": 5
+    },
+    {
+        "id": 8,
+        "image_url": "https://i.ibb.co/5TzYHMt/Rectangle-3-1.png",
+        "title": "AWS, Cloud Computing",
+        "description": "Get hands-on experience with Amazon Web Services (AWS) and learn cloud computing essentials for modern applications.",
+        "price": 35000,
+        "credit_hour": 5
+    },
+    {
+        "id": 9,
+        "image_url": "https://i.ibb.co/5v2LvG7/Rectangle-2-5.png",
+        "title": "Software Engineering",
+        "description": "Learn the best practices of software engineering, from requirements analysis to software design and testing.",
+        "price": 23000,
+        "credit_hour": 2
+    }
+]
