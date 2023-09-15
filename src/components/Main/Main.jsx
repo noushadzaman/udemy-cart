@@ -1,4 +1,3 @@
-// import PropTypes from 'prop-types'
 import { useEffect } from "react";
 import Courses from "../Courses/Courses";
 import { useState } from "react";
@@ -19,30 +18,31 @@ const Main = () => {
             .then(data => setCourses(data));
     }, [])
 
+
     const addPrice = (price, hour, title) => {
-        const alreadyAdded = selectedCourses.find(course => course === title);
-        if (alreadyAdded) {
-            toast.error("Already added", {
-                position: "top-right"
-            })
-        }
-        else {
-            let newRemainingHour = remainingHour - hour;
-            if (newRemainingHour >= 0) {
+
+        let newRemainingHour = remainingHour - hour;
+        if (newRemainingHour >= 0) {
+            const alreadyAdded = selectedCourses.find(course => course === title);
+            if (alreadyAdded) {
+                toast.error("Already added", {
+                    position: "top-right"
+                })
+            }
+            else {
                 setRemainingHour(newRemainingHour);
                 setTotalPrice(totalPrice + price);
                 setTotalHour(totalHour + hour);
                 setSelectedCourses([...selectedCourses, title]);
             }
-            else {
-                toast.error("You can't cross 20 hour credit", {
-                    position: "top-right"
-                })
-            }
         }
-
+        else {
+            toast.error("You can't cross 20 hour credit", {
+                position: "top-right"
+            })
+        }
     }
-    console.log(selectedCourses)
+
     return (
         <div className="main">
             <Courses
@@ -58,8 +58,6 @@ const Main = () => {
         </div>
     );
 };
-
-// Main.propTypes = {}
 export default Main;
 
 

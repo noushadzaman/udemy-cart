@@ -58,3 +58,7 @@
     font-weight: 600;
     margin-top: 26px;
 }
+
+hr {
+   border-color: rgba(28, 27, 27, 0.20);
+}
