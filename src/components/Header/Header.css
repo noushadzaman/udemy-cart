@@ -1,0 +1,11 @@
+.header{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-heading {
+    color: #1C1B1B;
+    font-size: 32px;
+    font-weight: 700;
+}
