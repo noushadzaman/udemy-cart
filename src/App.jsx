@@ -1,6 +1,7 @@
 import './App.css'
 import Header from './components/Header/Header'
-import Main from './components/Main/Main'
+import Main from './components/Main/Main';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header></Header>
       <Main></Main>
+      <Toaster />
     </>
   )
 }

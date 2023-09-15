@@ -3,7 +3,7 @@ import { FaDollarSign } from 'react-icons/fa';
 import { FiBookOpen } from 'react-icons/fi';
 import './Course.css'
 
-const Course = ({ course }) => {
+const Course = ({ course, addPrice }) => {
     const { image_url, title, description, price, credit_hour } = course;
     return (
         <div className='course-card'>
@@ -18,13 +18,14 @@ const Course = ({ course }) => {
                     <span><FiBookOpen></FiBookOpen></span><p> Credit: {credit_hour}hr</p>
                 </div>
             </div>
-            <button className='card-btn'>Select</button>
+            <button onClick={() => addPrice(price, credit_hour, title)} className='card-btn' >Select</button>
         </div>
     );
 };
 
 Course.propTypes = {
-    course: PropTypes.object.isRequired
+    course: PropTypes.object.isRequired,
+    addPrice: PropTypes.func.isRequired,
 };
 
 export default Course;
