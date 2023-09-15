@@ -2,6 +2,8 @@
 import { useEffect } from "react";
 import Courses from "../Courses/Courses";
 import { useState } from "react";
+import InteractivePart from "../InteractivePart/InteractivePart";
+import './Main.css'
 
 const Main = () => {
     const [courses, setCourses] = useState([]);
@@ -11,10 +13,11 @@ const Main = () => {
             .then(data => setCourses(data))
     }, [])
     return (
-        <div>
-            <Courses 
-            courses={courses}
+        <div className="main">
+            <Courses
+                courses={courses}
             ></Courses>
+            <InteractivePart></InteractivePart>
         </div>
     );
 };

@@ -1,0 +1,36 @@
+.interactive-part {
+    padding: 24px;
+    border-radius: 12px;
+    background: #FFF;
+    width: 312px;
+    height: 355px;
+    flex-shrink: 0;
+}
+
+#interactive-part-title {
+    color: #2F80ED;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.interactive-part>h2 {
+    color: #1C1B1B;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.credit-hour {
+    color: rgba(28, 27, 27, 0.80);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.total-price {
+    color: rgba(28, 27, 27, 0.80);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
