@@ -1,33 +1,35 @@
 import PropTypes from 'prop-types';
 import Course from '../Course/Course';
 import './Courses.css';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 const Courses = ({ courses, addPrice }) => {
-    const [allJobs, setAllJobs] = useState(false);
-    const seeAll = () => {
-        console.log('sorting');
-        setAllJobs(!allJobs);
-    }
+    // const [allJobs, setAllJobs] = useState(false);
+    // const seeAll = () => {
+    //     console.log('sorting');
+    //     setAllJobs(!allJobs);
+    // }
 
     return (
         <div className='courses-container'>
             <div className='course-card-container'>
                 {
-                    allJobs ?
+                    // allJobs ?
                         courses.map(course => <Course
                             addPrice={addPrice}
                             course={course}
                             key={course.id}
-                        ></Course>) :
-                        courses.slice(0, 6).map(course => <Course
-                            addPrice={addPrice}
-                            course={course}
-                            key={course.id}
                         ></Course>)
+                        // :courses.slice(0, 6).map(course => <Course
+                //             addPrice={addPrice}
+                //             course={course}
+                //             key={course.id}
+                //         ></Course>)
                 }
             </div>
-            <button onClick={() => seeAll()} className='all-btn'>See all</button>
+            {/* {
+                allJobs ? <button onClick={() => seeAll()} className='all-btn'>See less</button> : <button onClick={() => seeAll()} className='all-btn'>See all</button>
+            } */}
         </div>
     );
 };

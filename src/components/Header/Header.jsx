@@ -2,10 +2,10 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div className='header'>
+        <nav>
             <h1 className='header-heading'>Udemy Registration</h1>
             <img src="icons8-udemy-120.png" alt="" />
-        </div>
+        </nav>
     )
 }
 
